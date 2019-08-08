@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block title %}{{ section.title }} - gekkio.fi{% endblock title %}
+
+{% block content %}
+<section>
+{{ section.content | safe }}
+
+<h2>Recent blog posts</h2>
+
+{% set blog = get_section(path="blog/_index.md") %}
+
+<ul>
+{% for post in blog.pages | sort(attribute="date") | reverse | slice(end=5) %}
+  <li><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.date | date(format="%B %-d, %Y") }}</li>
+{% endfor %}
+</ul>
+
+</section>
+{% endblock content %}
+
+{% block footer %}
+Somicro icons by <a href="http://veodesign.com/2011/en/09/07/somicro-27-free-simple-social-media-icons/">Veo Design</a>.
+{% endblock footer %}

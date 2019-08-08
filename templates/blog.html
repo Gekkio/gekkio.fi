@@ -1,0 +1,18 @@
+{% extends "page.html" %}
+
+{% block title %}{{ section.title }} - gekkio.fi{% endblock title %}
+
+{% block content %}
+<section>
+{{ section.content | safe }}
+
+{% set blog = get_section(path="blog/_index.md") %}
+
+<ul>
+{% for post in blog.pages | sort(attribute="date") | reverse %}
+  <li><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.date | date(format="%B %-d, %Y") }}</li>
+{% endfor %}
+</ul>
+
+</section>
+{% endblock content %}
