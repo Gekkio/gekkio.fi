@@ -5,5 +5,21 @@ addons:
     - name: zola
       channel: edge
 
+env:
+  global:
+    - secure: "OxPsUb4NQl9TtAlTbRATtCMT/yFPJwrZxBMGY6DngswXlia+g8NUuYzt9Lu7wOoCCryB6jF9yvJ5SJQIaskicPElfvlAmPP6zxIEuQFAs524iS5o/PpasJTJKMkl/Vx9DMp6ikm/3LJUsdWwQoSbXtrXnTRdpKvuZewBP9nNCGSGq/uGxixrvg1d7dAzjG2Zh/yuByyCgrQZphMmWawKIj+J9XzHBuDJLEtHyY435/VX65fLLIUTo/Cqs/EqU7Rtyw2NEwc/iHjBlCa/J3TWCHNtI8lmYaF+RkYJJdMCrJUBkLhyX+fdms65dLU6gw/aWE2TNPA2ZAv4s3I5G0+4lwawyW0PH00FpSWu5UgMaBkW8DM+cFPxhhpRi1Puro7SNsQTVKTIAK/IKtWJzYnNVqBu0WVkqXxx4eQxrKU+yhprRL2J8DpA67lglQLyb/EsEAHBT9/ky9KIS64NcPQZJiBjqNWRA5R5+OJDkRrXtdpiAR3upcHVLqNAT8+bTzXd9rMLdNZDZ7Q1Iz6fY1L2N3QIBY/01VLjj66isnuwrMedZgdIA7YDCTI0+IU9Pcvam3dUZgB75UlJDeHJ72zkYYOaHVMJ1kcZvxUYteUzV9bmBr94xVl7CucfSo0vwcDnN1xR6yhASh9gwLld+KJ64YhVLdYHwxG7YXp868o2IwQ="
+    - secure: "nWvzAE9GwCJtBfWDFHeNlq8naw+Ppqeruclp5jXjyHpRA1WIJppw8KaUBOwhEpJH9F2EDgOOXvRk3OeziTfFSHZTdCyzgte8jOFV/M5dRtyr5FtCVWLKC2eisiiLqD6H8I1ILx5quatINLugv79vP5y8QKfjiDalCz3ycu/qQeCr9aLlzany7qFFzcSpLWJbHm6fqv5GpOjtxhrvFWMyfEetudl3d6lhmhr/g5SGrI/9JdYxSyjMKhBAKJW62mho4UHDmmk2ddlbzle08mbf+i2IzR16bavlEoQClwjc/qpYLT/iTN6xOV1W5MHV7WA0wtoH96WRLdiw4okTVu6w63Q59KZyBhGGFUFaiPlqQQrIXEX2rwJPgyOvmqAWFTLAdVU5yD+V7Kg4CO3kfTZ9DHQQ/MkpaLVdFPR7vawy0BnLHTaGJJ+FZA5YqkQc0HKKu1xl0/BjS15XCxKc7tmjBD9u6UVhsu7Ff59tgCxK88vsejoBgmoXhT1FaU4v5BWexv0T8czWkQIBGzuiORmGDORd6D7nruS/RfP/qxr9ORakacBdGo25n1YOdnq8VTR7feyWMm+hDLMkvyYNfRmO+cfzO70CoQG0Dk3f0+eGjhcgBFwUZjpU/wAi0gcq+fBq+JKLBTqYuagj7KvsCgqas1jitwzMLvy5WojQt+JeJ7o="
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_64b0588f674e_key -iv $encrypted_64b0588f674e_iv -in id_rsa.enc -out .travis/id_rsa -d
+  - chmod 600 .travis/id_rsa
+  - git lfs pull
+
 script:
   - zola build
+
+after_success:
+  - eval "$(ssh-agent -s)"
+  - ssh-add .travis/id_rsa
+  - rsync --delete -qurt -e "ssh -o BatchMode=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=quiet -p $DEPLOY_PORT -l travis" public/ $DEPLOY_HOST:gekkio.fi/ > /dev/null 2>&1
+  - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=quiet -p $DEPLOY_PORT -l travis $DEPLOY_HOST ./deploy_site.sh > /dev/null 2>&1
