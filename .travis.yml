@@ -2,7 +2,8 @@ dist: bionic
 language: minimal
 addons:
   snaps:
-    - zola
+    - name: zola
+      channel: edge
 
 script:
   - zola build
