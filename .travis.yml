@@ -1,0 +1,8 @@
+dist: bionic
+language: minimal
+addons:
+  snaps:
+    - zola
+
+script:
+  - zola build
