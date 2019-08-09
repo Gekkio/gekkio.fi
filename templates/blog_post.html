@@ -16,7 +16,7 @@
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function() {
-      this.page.url = 'http://gekkio.fi$url$';
+      this.page.url = {{ page.permalink | json_encode() | safe }};
     };
     (function() {
     var d = document, s = d.createElement('script');
