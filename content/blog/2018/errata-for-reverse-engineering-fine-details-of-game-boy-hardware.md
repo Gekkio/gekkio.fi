@@ -3,13 +3,13 @@ title = "Errata for \"Reverse engineering fine details of Game Boy hardware\""
 date = 2018-02-05
 +++
 
-I held a presentation about Game Boy reverse engineering at Disobey 2018, a
+I gave a presentation about Game Boy reverse engineering at Disobey 2018, a
 security/hacking-oriented conference held in Helsinki. It was a really nice
 chance to show off some of my tools and research results, and at least from my
 point of view the presentation went really well! Here's a YouTube video of the
 presentation:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GBYwjch6oEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{ youtube(id="GBYwjch6oEE", class="youtube") }}
 
 Unfortunately, even with a lot of preparation, some errors managed to creep
 into the last section of the talk, because I happened to misread some of my own
