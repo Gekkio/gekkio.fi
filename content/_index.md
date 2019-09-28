@@ -47,4 +47,4 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 * May 2018: Reverse Engineering fine details of Game Boy hardware [v3.0] (at Reaktor Breakpoint 2018)
 * April 2018: [Reverse Engineering fine details of Game Boy hardware [v2.0]](https://youtu.be/2K5FIGQ2Hxk) (at Reaktor Meetup: Hack the hardware)
 * January 2018: [Reverse Engineering fine details of Game Boy hardware](https://youtu.be/GBYwjch6oEE) (at Disobey 2018) [[errata blog post](@/blog/2018/errata-for-reverse-engineering-fine-details-of-game-boy-hardware.md)]
-* October 2017: imgui-rs: Immediate mode GUIs with Rust (at Finland Rust Meetup)
+* October 2017: [imgui-rs: Immediate mode GUIs with Rust](https://youtu.be/3dGnS9Dp5kc) (at Rust Finland Meetup)
