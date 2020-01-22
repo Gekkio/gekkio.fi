@@ -41,6 +41,7 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 * [**Gekkio/gb-hardware**: Game Boy -related custom hardware](https://github.com/Gekkio/gb-hardware)
 * [**imgui-rs**: Rust bindings for Dear ImGui, an immediate-mode GUI library](https://github.com/Gekkio/imgui-rs)
 * [**gnome-session-xmonad**: Ubuntu package for Gnome + XMonad session files](https://github.com/Gekkio/gnome-session-xmonad)
+* [**GhidraBoy**: Sharp SM83 / Game Boy extension for Ghidra reverse engineering framework](https://github.com/Gekkio/GhidraBoy)
 
 ## Talks I've given
 
