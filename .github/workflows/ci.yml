@@ -1,0 +1,34 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches:
+    - master
+
+jobs:
+  build_only:
+    name: Build site
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      - name: Install Ubuntu packages
+        run: sudo snap install zola
+      - name: Run zola build
+        run: zola build
+  build_and_deploy:
+    name: Build + deploy site
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      - name: Install Ubuntu packages
+        run: sudo snap install aws-cli zola
+      - name: Run zola build
+        run: zola build
