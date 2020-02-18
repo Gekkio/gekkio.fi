@@ -16,7 +16,7 @@ jobs:
         with:
           lfs: true
       - name: Install Ubuntu packages
-        run: sudo snap install zola
+        run: sudo snap install --edge zola
       - name: Run zola build
         run: zola build
   build_and_deploy:
@@ -29,6 +29,8 @@ jobs:
         with:
           lfs: true
       - name: Install Ubuntu packages
-        run: sudo snap install aws-cli zola
+        run: >
+          sudo snap install aws-cli
+          sudo snap install --edge zola
       - name: Run zola build
         run: zola build
