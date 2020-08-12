@@ -1,5 +1,5 @@
 +++
-title = "Random chip decap - Samsung S4L85K1X01"
+title = "Decapped random chip - Samsung S4L85K1X01"
 date = 2020-08-04
 +++
 

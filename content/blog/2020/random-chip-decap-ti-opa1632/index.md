@@ -1,5 +1,5 @@
 +++
-title = "Random chip decap - Texas Instruments OPA1632"
+title = "Decapped random chip - Texas Instruments OPA1632"
 date = 2020-08-04
 +++
 
