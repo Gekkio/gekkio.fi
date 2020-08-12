@@ -3,7 +3,10 @@ title = "Decapped random chip - STMicro L78M05CV"
 date = 2020-08-12
 +++
 
-This time I've decapped an [STMicro L78M05CV](https://www.ti.com/product/L78M05CV), a fixed 5.0V linear regulator chip. *Disclaimer: there's a small possibility I've mixed two chips and the raw die photo is actually L7805CV instead...*
+This time I've decapped an [STMicro
+L78M05CV](https://www.st.com/en/power-management/l78m.html), a fixed 5.0V
+linear regulator chip. *Disclaimer: there's a small possibility I've mixed two
+chips and the raw die photo is actually L7805CV instead...*
 
 <div class="framed">
 
