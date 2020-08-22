@@ -336,7 +336,7 @@ electronical devices and even random pieces of unconnected wires!
 | Test                     | Input current |
 | ------------------------ | ------------- |
 | HHL board                | 1-5 mA        |
-| Correctly used bare chip | 0.000008 mA   |
+| Correctly used bare chip | 0.0008 mA     |
 | HHL-style bare chip      | 20-30 mA      |
 | Worst case bare chip     | 52 mA         |
 
