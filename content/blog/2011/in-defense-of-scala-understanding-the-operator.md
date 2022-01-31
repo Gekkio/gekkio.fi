@@ -19,7 +19,7 @@ println(first ++ second)
 // List(1, 2, 3, 4, 5, 6)
 ```
 
-In this blog post I'll try to show that the perceived complexity of the definition is a necessary thing arising from several design goals. I'll try to show code examples in Java so that the overall syntax is familiar for most people. Basically I'm trying to say that by following the following three goals you end up with the same kind of definition that Scala has (except that it cannot be represented with Java without violating any of the goals). If you feel that your grasp of Java generics is lacking or just want the TLDR version, you can [skip right away to the monstrosity](#final).
+In this blog post I'll try to show that the perceived complexity of the definition is a necessary thing arising from several design goals. I'll try to show code examples in Java so that the overall syntax is familiar for most people. Basically I'm trying to say that by following the following three goals you end up with the same kind of definition that Scala has (except that it cannot be represented with Java without violating any of the goals). If you feel that your grasp of Java generics is lacking or just want the TLDR version, you can [skip right away to the monstrosity](#overview-of-the-final-java-version).
 
 ## Design goals
 
