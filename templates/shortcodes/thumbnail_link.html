@@ -1,3 +1,4 @@
 <a href="{{ get_url(path=path) }}">
-  <img src="{{ resize_image(path=path, width=width | default(value=400), height=height | default(value=400), op=op | default(value="fit_width")) }}" />
+  {% set image = resize_image(path=path, width=width | default(value=400), height=height | default(value=400), op=op | default(value="fit_width")) %}
+  <img src="{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}" />
 </a>
