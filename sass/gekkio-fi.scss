@@ -3,7 +3,7 @@
 @import 'gb-pcb-vis';
 
 @function calculateRem($size) {
-  $remSize: $size / 16px;
+  $remSize: $size / 18px;
   @return $remSize * 1rem;
 }
 
@@ -37,6 +37,8 @@ html {
   background: #fff url(/images/bg.jpg) repeat-x;
   color: #000;
   font-family: Raleway, arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
 }
 body {
   min-width: 960px;
@@ -66,7 +68,7 @@ body > article, body > section {
   background-color: #fff;
   border: 1px solid #AFD1FF;
   border-radius: 5px;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 body > footer {
   padding: 0 1em;
