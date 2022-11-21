@@ -27,6 +27,10 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 
 ![Github](images/github.png) [Gekkio at Github](https://github.com/Gekkio)
 
+[@gekkio at mastodon.social](https://mastodon.social/@gekkio)
+
+[gekkio at cohost](https://cohost.org/gekkio)
+
 ![Twitter](images/twitter.png) [Gekkio at Twitter](https://twitter.com/gekkio)
 
 ![LinkedIn](images/linkedin.png) [LinkedIn](https://www.linkedin.com/in/gekkio/)
@@ -35,13 +39,14 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 
 ## Notable public projects
 
-* [**Mooneye GB**: A Game Boy research project and emulator written in Rust](https://github.com/Gekkio/mooneye-gb)
-* [**Game Boy: Complete Technical Reference**: A Game Boy reference manual focused on answering the unanswered questions](https://github.com/Gekkio/gb-ctr)
 * [**Game Boy Hardware Database**: Data and photos of various types of Game Boy consoles and game cartridges](https://gbhwdb.gekkio.fi)
-* [**Gekkio/gb-hardware**: Game Boy -related custom hardware](https://github.com/Gekkio/gb-hardware)
 * [**Gekkio/gb-schematics** Various Game Boy -related schematics based on reverse engineering work](https://github.com/Gekkio/gb-schematics)
-* [**gnome-session-xmonad**: Ubuntu package for Gnome + XMonad session files](https://github.com/Gekkio/gnome-session-xmonad)
+* [**Gekkio/gb-research** Game Boy hardware research and reverse engineering (including fully traced and RE'd SM83 CPU core)](https://github.com/Gekkio/gb-research)
+* [**Game Boy: Complete Technical Reference**: A Game Boy reference manual focused on answering the unanswered questions](https://github.com/Gekkio/gb-ctr)
 * [**GhidraBoy**: Sharp SM83 / Game Boy extension for Ghidra reverse engineering framework](https://github.com/Gekkio/GhidraBoy)
+* [**Gekkio/gb-hardware**: Game Boy -related custom hardware](https://github.com/Gekkio/gb-hardware)
+* [**Mooneye GB**: A Game Boy research project and emulator written in Rust](https://github.com/Gekkio/mooneye-gb)
+* [**gnome-session-xmonad**: Ubuntu package for Gnome + XMonad session files](https://github.com/Gekkio/gnome-session-xmonad)
 
 ## Talks I've given
 
