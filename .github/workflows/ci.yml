@@ -3,13 +3,13 @@ on:
   pull_request:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   build_only:
     name: Build site
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master'
+    if: github.ref != 'refs/heads/main'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
   build_and_deploy:
     name: Build + deploy site
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
