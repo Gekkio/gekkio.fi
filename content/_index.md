@@ -46,7 +46,6 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 * [**GhidraBoy**: Sharp SM83 / Game Boy extension for Ghidra reverse engineering framework](https://github.com/Gekkio/GhidraBoy)
 * [**Gekkio/gb-hardware**: Game Boy -related custom hardware](https://github.com/Gekkio/gb-hardware)
 * [**Mooneye GB**: A Game Boy research project and emulator written in Rust](https://github.com/Gekkio/mooneye-gb)
-* [**gnome-session-xmonad**: Ubuntu package for Gnome + XMonad session files](https://github.com/Gekkio/gnome-session-xmonad)
 
 ## Talks I've given
 
