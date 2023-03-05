@@ -45,28 +45,33 @@ html {
   line-height: 1.2;
 }
 body {
-  min-width: 960px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 body > header {
-  margin: 1em 0 0.5em;
-  padding: 0 1em;
-  position: relative;
-}
-body > header > h2 {
-  margin: 0;
-}
-body > header > nav {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-body > header > nav a {
-  @include font-size(24px);
-  font-weight: bold;
-  margin-left: 2em;
+  margin: 1em 1em 0.5em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  & > * {
+    flex: 0 1 auto;
+  }
+
+  & > h2 {
+    margin: 0;
+  }
+  & > nav {
+    margin-left: 2em;
+    display: flex;
+    gap: 1em;
+
+    a {
+      @include font-size(24px);
+      font-weight: bold;
+    }
+  }
 }
 body > article, body > section {
   background-color: #fff;
@@ -101,6 +106,10 @@ table {
   border-radius: 5px;
   box-shadow: 0 1px 2px #ddd;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 table > caption {
   @include font-size(20px);
   font-weight: bold;
@@ -114,14 +123,19 @@ th {
 tr:nth-child(odd) > td {
   background-color: #fafafa;
 }
+code {
+  word-break: break-all;
+}
 pre {
   border: 1px solid #ddd;
   font-size: 75%;
   background-color: #f8f8f8;
+  overflow-x: scroll;
 }
 video {
   display: block;
-  max-width: 500px;
+  width: 500px;
+  max-width: 100%;
 }
 
 .gbpcbvis {
@@ -146,19 +160,28 @@ video {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 .gbpcbvis .images > div {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 50%;
   max-width: 50%;
+
+  @media only screen and (max-width: 500px) {
+    max-width: unset;
+    width: 100%;
+  }
 }
 
 .framed {
   display: inline-block;
   img {
     border: 4px solid #ddd;
-    max-width: 100%;
   }
 }

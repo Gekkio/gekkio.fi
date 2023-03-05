@@ -23,9 +23,15 @@ Quick links to each year:
   .tweet > * {
     flex: 0 1 auto;
     width: 50%;
+    overflow-x: scroll;
   }
-  .tweet img {
-    max-width: 100%;
+  @media only screen and (max-width: 600px) {
+    .tweet {
+      flex-direction: column;
+    }
+    .tweet > * {
+      width: auto;
+    }
   }
 </style>
 

@@ -23,7 +23,7 @@ My current interests include:
 <div id="home-links">
 
 ![E-mail](images/email.png) gekkio@gekkio.fi\
-Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.asc">cbc6be3a481a0d2894076c64ec31d82c0837b23e</a>
+Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.asc">`cbc6be3a481a0d2894076c64ec31d82c0837b23e`</a>
 
 ![Github](images/github.png) [Gekkio at Github](https://github.com/Gekkio)
 
