@@ -138,6 +138,15 @@ video {
   max-width: 100%;
 }
 
+.youtube {
+  & > iframe {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+    max-height: 30vh;
+  }
+}
+
 .gbpcbvis {
   @extend %clearfix;
 }
