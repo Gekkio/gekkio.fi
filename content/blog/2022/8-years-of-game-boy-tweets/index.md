@@ -24,6 +24,9 @@ Quick links to each year:
     flex: 0 1 auto;
     width: 50%;
   }
+  .tweet img {
+    max-width: 100%;
+  }
 </style>
 
 ## 2015: Research begins {#2015}
