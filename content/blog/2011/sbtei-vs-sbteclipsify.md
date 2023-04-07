@@ -7,7 +7,7 @@ date = 2011-04-17T15:27:28+02:00
 
 In addition to SBT plugins for Eclipse, there's also an _Eclipse plugin for SBT_ called [SbtEclipsify](http://github.com/musk/SbtEclipsify). It uses a completely different approach and generates Eclipse project files, so it's similar to the _eclipse:eclipse_ task in Maven.
 
-When comparing SBTEI and SbtEclipsify, it's useful to look at [some comparisons](http://docs.codehaus.org/display/MAVENUSER/Eclipse+Integration) between M2Eclipse and eclipse:eclipse, which are the equivalents in the Maven ecosystem. As you can  see from the comparison, eclipse:eclipse provides adequate basic  support, but some advanced things (e.g. workspace dependency resolution)  require a plugin for Eclipse. This is especially useful when you have multi-module projects **and separate library projects** which you share between some of your projects. Let's say you have a project called MyLibrary and MyProject like this:
+When comparing SBTEI and SbtEclipsify, it's useful to look at ~~some comparisons~~ (2023 edit: removed dead link) between M2Eclipse and eclipse:eclipse, which are the equivalents in the Maven ecosystem. As you can  see from the comparison, eclipse:eclipse provides adequate basic  support, but some advanced things (e.g. workspace dependency resolution)  require a plugin for Eclipse. This is especially useful when you have multi-module projects **and separate library projects** which you share between some of your projects. Let's say you have a project called MyLibrary and MyProject like this:
 
 MyLibrary:
 

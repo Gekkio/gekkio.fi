@@ -15,9 +15,9 @@ ideas and recommendations I try to apply when writing test ROMs.
 There are already some large test ROM suites:
 
 * [Blargg's test ROMs](http://gbdev.gg8.se/files/roms/blargg-gb-tests/)
-* [Gambatte test ROMs](https://github.com/sinamas/gambatte/tree/master/test/hwtests)
+* ~~gambatte test ROMs~~ (2023 edit: removed dead link)
 * [AntonioND's test ROMs](https://github.com/AntonioND/gbc-hw-tests)
-* [Mooneye GB test ROMs](https://github.com/Gekkio/mooneye-gb/tree/master/tests)
+* [Mooneye Test Suite](https://github.com/Gekkio/mooneye-test-suite)
 
 Even though many test ROMs exist, I strongly recommend serious emulator
 developers to write their own tests as well. I believe in independent

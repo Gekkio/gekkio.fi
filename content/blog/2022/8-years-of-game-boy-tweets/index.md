@@ -1528,7 +1528,7 @@ Sadly I don't think many people understood this pun... 😭
 
 > Max quality stitched photo is available here:
 >
-> <https://gekkio.fi/files/decapped>
+> <https://gekkio.fi/files/decapped-chips/Frankenscope/CPU-AGB-B/>
 
 </div>
 

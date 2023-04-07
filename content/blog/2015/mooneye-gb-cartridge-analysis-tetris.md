@@ -50,7 +50,7 @@ Try the tool by pressing the loading button below, and hovering or clicking on t
 
 The first important thing to notice is the PCB IDs: *DMG-TRA-1* (front) and *AAAC S* (back). Gameboy games with similar hardware usually have similar PCBs, although there might be minor differences between revisions. The ROM is of course always different, but the PCB layout might be identical between several games.
 
-The second thing to notice is the low amount of components on the board. The only IC (integrated circuit) is the ["Glop top"](http://en.wikipedia.org/wiki/Electronic_packaging#Glop-top)-packaged ROM. This type of packaging unfortunately prevents us from seeing the chip itself, so we can't see the ROM chip model or any actual pins.
+The second thing to notice is the low amount of components on the board. The only IC (integrated circuit) is the ["Glob-top"](http://en.wikipedia.org/wiki/Electronic_packaging#Glob-top)-packaged ROM. This type of packaging unfortunately prevents us from seeing the chip itself, so we can't see the ROM chip model or any actual pins.
 
 ### Connections on the PCB
 

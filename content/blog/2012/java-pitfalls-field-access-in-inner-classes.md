@@ -91,7 +91,7 @@ class Test$Inner2 {
 }
 ```
 
-As you can see, a _package-level_ static accessor method called access$000 is generated in order to grant access to the private field. Now it's easier to see that alternative 3 will most likely be the fastest one, because it is the only one that uses direct field access. Using package access in fields is a micro-optimization, but this whole thing is definitely a detail that should be known by Java developers. In performance-critical parts of code it might actually matter, and [the Android performance guide](http://developer.android.com/guide/practices/design/performance.html#package_inner) actually mentions this implementation detail.
+As you can see, a _package-level_ static accessor method called access$000 is generated in order to grant access to the private field. Now it's easier to see that alternative 3 will most likely be the fastest one, because it is the only one that uses direct field access. Using package access in fields is a micro-optimization, but this whole thing is definitely a detail that should be known by Java developers. In performance-critical parts of code it might actually matter, and ~~the Android performance guide~~ (2023 edit: removed dead link) actually mentions this implementation detail.
 
 This implementation detail may also cause slight confusion when field access is attempted on a null reference of the inner class. Consider the following code:
 

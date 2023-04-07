@@ -38,7 +38,7 @@ Let's imagine that the stack pointer points to some part of VRAM, and we have th
     *  *  *  *  *  *        | VRAM accessibility (* = inaccessible)
                 P0 P1 P2    | CPU (POP instruction cycles)
 
-The previous emulation code essentially runs the entire instruction at t=4, but VRAM accessibility changes while the instruction is being executed. We need per-cycle accurate emulation. Based on a [POP test](https://github.com/Gekkio/mooneye-gb/blob/master/tests/pop_timing/test.s), the individual cycles execute the following operations:
+The previous emulation code essentially runs the entire instruction at t=4, but VRAM accessibility changes while the instruction is being executed. We need per-cycle accurate emulation. Based on a [POP test](https://github.com/Gekkio/mooneye-test-suite/blob/8d742b9d55055f6878a2f3017e0ccf2234cd692c/acceptance/pop_timing.s), the individual cycles execute the following operations:
 
     P0: Memory read and instruction decoding
     P1: Memory read for the low byte
@@ -55,7 +55,7 @@ What about PUSH? We essentially do the same thing in reverse, but we now have 4 
     *  *  *  *  *  *        | VRAM accessibility (* = inaccessible)
                 P0 P1 P2 P3 | CPU (PUSH instruction cycles)
 
-Once again, the previous emulation code runs everything at t=4. Also, PUSH actually has one cycle of some kind of internal delay, so the memory accesses have even more possible timings. Based on a [PUSH test](https://github.com/Gekkio/mooneye-gb/blob/master/tests/push_timing/test.s), the individual cycles execute the following operations:
+Once again, the previous emulation code runs everything at t=4. Also, PUSH actually has one cycle of some kind of internal delay, so the memory accesses have even more possible timings. Based on a [PUSH test](https://github.com/Gekkio/mooneye-test-suite/blob/8d742b9d55055f6878a2f3017e0ccf2234cd692c/acceptance/push_timing.s), the individual cycles execute the following operations:
 
     P0: Memory read and instruction decoding
     P1: Internal delay

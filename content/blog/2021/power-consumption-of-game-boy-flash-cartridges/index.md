@@ -117,7 +117,7 @@ The tested version was GB-CART8M-A v2.1 with an MX29LV640E flash chip and an IS6
 
 {{ thumbnail_link(path="blog/2021/power-consumption-of-game-boy-flash-cartridges/test_setup.jpg", op="fit_height", height=300) }}
 
-An original Game Boy (DMG) was powered with a [Rohde & Schwarz HMC8043](https://www.rohde-schwarz.com/products/test-and-measurement/dc-power-supplies/rs-hmc804x-dc-power-supply-series_63493-61542.html) programmable power supply using the DC jack input providing a stable +6V input voltage. The power supply was controlled with SCPI commands via USBTMC by an automated test running on a PC. Testing some cartridges involves going through an initial menu after powering on the system, and in these cases some manual steps were necessary to complete the test.
+An original Game Boy (DMG) was powered with a [Rohde & Schwarz HMC8043](https://www.rohde-schwarz.com/us/products/test-and-measurement/dc-power-supplies/rs-hmc804x-dc-power-supply-series_63493-61542.html) programmable power supply using the DC jack input providing a stable +6V input voltage. The power supply was controlled with SCPI commands via USBTMC by an automated test running on a PC. Testing some cartridges involves going through an initial menu after powering on the system, and in these cases some manual steps were necessary to complete the test.
 
 The used console has the serial number **G38953646**, and uses a B version SoC chip and a type C power board. You can read more details about the test console on its [Game Boy hardware database entry page](https://gbhwdb.gekkio.fi/consoles/dmg/G38953646.html).
 

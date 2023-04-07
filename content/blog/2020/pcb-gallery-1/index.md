@@ -20,7 +20,7 @@ At some point I was starting to hit both size and layer limitations of Eagle,
 and had to choose between paying for Eagle or switch to some alternative. I
 don't remember exactly what the pricing model of Eagle looked like, but having
 support for a smallish 4-layer design was way too expensive, so I started
-slowly switching to [KiCad](https://www.kicad-pcb.org/). This process took a
+slowly switching to [KiCad](https://www.kicad.org/). This process took a
 fairly long time, because the workflow was quite different and KiCad had (and
 still has) some very rough edges. However, I can now say the transition was
 100% worth it, and I'm very happy with KiCad.
@@ -213,7 +213,7 @@ labeling.
 
 ## Useful links
 
-* KiCad PCB design software: <https://www.kicad-pcb.org/>
+* KiCad PCB design software: <https://www.kicad.org/>
 * Eagle PCB design software: <https://www.autodesk.com/products/eagle>
 * JLCPCB PCB manufacturer: <https://jlcpcb.com>
 * Elecrow PCB manufacturer: <https://www.elecrow.com>
