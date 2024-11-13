@@ -27,9 +27,7 @@ Public key: <a style="font-family: monospace" href="publickey.gekkio@gekkio.fi.a
 
 ![Github](images/github.png) [Gekkio at Github](https://github.com/Gekkio)
 
-[@gekkio at mastodon.social](https://mastodon.social/@gekkio)
-
-[gekkio at cohost](https://cohost.org/gekkio)
+<a rel="me" href="https://mastodon.social/@gekkio">@gekkio at mastodon.social</a>
 
 ![Twitter](images/twitter.png) [Gekkio at Twitter](https://twitter.com/gekkio)
 
