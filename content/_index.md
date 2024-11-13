@@ -9,7 +9,7 @@ developer in the evening, Game Boy specialist 24/7.
 I've worked in the IT industry since 2004, and had my own IT consulting company
 Jawsy Solutions during 2009-2013.\
 I've used Java since 2000, Scala since 2007, and Rust since 2014.\
-I'm currently employed by [Reaktor](https://www.reaktor.com).\
+I'm currently freelancing as a hands-on software/firmware/hardware/gateware consultant via my own company Merulogic Oy. \
 I studied at Aalto University and have a B.Sc degree in Bioinformation
 Technology and a M.Sc degree in Computer Science.
 
