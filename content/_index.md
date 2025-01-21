@@ -2,23 +2,18 @@
 title = "Home"
 +++
 
-Hi there! I'm Joonas, a passionate software developer from Finland.\
-I'm a senior software dev during the day, hardware researcher and emulator
-developer in the evening, Game Boy specialist 24/7.
+Hi there! I'm Joonas, a passionate multi-disciplinary freelancer from Finland.
 
-I've worked in the IT industry since 2004, and had my own IT consulting company
-Jawsy Solutions during 2009-2013.\
-I've used Java since 2000, Scala since 2007, and Rust since 2014.\
-I'm currently freelancing as a hands-on software/firmware/hardware/gateware consultant via my own company Merulogic Oy. \
-I studied at Aalto University and have a B.Sc degree in Bioinformation
-Technology and a M.Sc degree in Computer Science.
+I started my work career in the software industry in 2004, and had my own consulting company Jawsy Solutions during 2009-2013.\
+I'm currently freelancing as a hands-on software/firmware/hardware/gateware consultant via my own company [Merulogic Oy](https://merulogic.com). \
+I studied at Aalto University and have a B.Sc degree in Bioinformation Technology and a M.Sc degree in Computer Science.
 
 My current interests include:
 
 * Rust
 * Game Boy emulators and hardware analysis
-* FPGA/CPLD systems (with VHDL)
-* Digital electronics
+* FPGA/CPLD systems (with Bluespec BSV, or VHDL)
+* Digital electronics and circuit boards (with KiCad)
 
 <div id="home-links">
 
