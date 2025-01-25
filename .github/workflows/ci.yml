@@ -30,7 +30,7 @@ jobs:
           lfs: true
       - name: Install Ubuntu packages
         run: |
-          sudo apt-get install awscli
+          sudo snap install aws-cli --classic
           sudo snap install --edge zola
       - name: Run zola build
         run: zola build
