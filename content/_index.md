@@ -5,7 +5,7 @@ title = "Home"
 Hi there! I'm Joonas, a passionate multi-disciplinary freelancer from Finland.
 
 I started my work career in the software industry in 2004, and had my own consulting company Jawsy Solutions during 2009-2013.\
-I'm currently freelancing as a hands-on software/firmware/hardware/gateware consultant via my own company [Merulogic Oy](https://merulogic.com). \
+I'm currently freelancing as a hands-on software/firmware/hardware/gateware consultant via my own company [Merulogic Oy](https://www.merulogic.com). \
 I studied at Aalto University and have a B.Sc degree in Bioinformation Technology and a M.Sc degree in Computer Science.
 
 My current interests include:
