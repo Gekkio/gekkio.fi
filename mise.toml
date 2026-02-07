@@ -1,0 +1,8 @@
+[tools]
+zola = "0.22.1"
+
+[tasks.default]
+depends = ['dev']
+
+[tasks.dev]
+run = "zola serve"

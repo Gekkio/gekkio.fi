@@ -12,11 +12,10 @@ jobs:
     if: github.ref != 'refs/heads/main'
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
         with:
           lfs: true
-      - name: Install Ubuntu packages
-        run: sudo snap install --edge zola
+      - uses: jdx/mise-action@v3
       - name: Run zola build
         run: zola build
   build_and_deploy:
@@ -25,17 +24,17 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
         with:
           lfs: true
+      - uses: jdx/mise-action@v3
       - name: Install Ubuntu packages
         run: |
           sudo snap install aws-cli --classic
-          sudo snap install --edge zola
       - name: Run zola build
         run: zola build
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

@@ -5,7 +5,9 @@ base_url = "https://gekkio.fi"
 compile_sass = true
 
 [markdown]
-highlight_code = true
+
+[markdown.highlighting]
+theme = "github-light"
 
 [extra]
 # Put all your custom variables here
