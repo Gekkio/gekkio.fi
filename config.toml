@@ -1,8 +1,16 @@
 # The URL the site will be built for
 base_url = "https://gekkio.fi"
 
+title = "Gekkio's Technical Blog"
+description = "Technical blog by Joonas Javanainen"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+author = "Joonas Javanainen"
 
 [markdown]
 
