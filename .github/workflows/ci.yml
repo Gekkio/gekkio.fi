@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          lfs: true
       - uses: jdx/mise-action@v3
       - name: Run zola build
         run: zola build
@@ -25,8 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          lfs: true
       - uses: jdx/mise-action@v3
       - name: Install Ubuntu packages
         run: |
