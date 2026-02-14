@@ -35,4 +35,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
         run: |
-          aws s3 sync public/ s3://gekkio.fi/ --endpoint-url ${{ secrets.S3_ENDPOINT}}
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET}}/ --endpoint-url ${{ secrets.S3_ENDPOINT}}
