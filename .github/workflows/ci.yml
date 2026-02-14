@@ -36,4 +36,4 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
         run: |
           aws s3 sync public/ s3://${{ secrets.S3_BUCKET }}/ --endpoint-url ${{ secrets.S3_ENDPOINT }}
-          aws s3 website s3://${{ secrets.S3_BUCKET }}/ --index-document index.html --error-document /404.html --endpoint-url ${{ secrets.S3_ENDPOINT }}
+          aws s3 website s3://${{ secrets.S3_BUCKET }}/ --index-document index.html --error-document 404.html --endpoint-url ${{ secrets.S3_ENDPOINT }}
